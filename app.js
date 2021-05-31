@@ -26,10 +26,10 @@ app.post("/", function(req, res) {
         }]
 
     };
-    const url = 'https://us6.api.mailchimp.com/3.0/lists/6db32c55f2';
+    const url = 'https://us6.api.mailchimp.com/3.0/lists/list-id';
     const options = {
         method: "post",
-        auth: "jivitesh :13d0c5defd9f8959f82da60e1d039c59-us6"
+        auth: "jivitesh :api-key"
     }
 
 
@@ -62,8 +62,3 @@ app.listen(process.env.PORT || 3000, function() {
     console.log("Server is running on port 3000");
 })
 
-//Api key
-//13d0c5defd9f8959f82da60e1d039c59-us6
-
-//List id
-//6db32c55f2
